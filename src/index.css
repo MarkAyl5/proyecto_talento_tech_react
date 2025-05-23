@@ -4,4 +4,6 @@
 @theme {
     --font-orbitron: "Orbitron", "sans-serif";
     --font-poppins: "Poppins", "sans-serif";
+    --color-strongblue: #0D1122;
+    --color-light-white: #FAFAFA;
 }
