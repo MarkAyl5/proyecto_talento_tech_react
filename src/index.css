@@ -6,4 +6,9 @@
     --font-poppins: "Poppins", "sans-serif";
     --color-strongblue: #0D1122;
     --color-light-white: #FAFAFA;
+    --color-price-blue: #1D36B5;
+}
+
+#rainbow-gradient{
+    background: linear-gradient(to bottom, #FF0000, #DA8700, #E5ED00, #00FF00, #1000F6, #800874);
 }

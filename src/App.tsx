@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
+import HomePageProducts from "./components/HomePageProducts"
 function App() {
   
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar/>
       <HeroSection/>
+      <HomePageProducts/>
     </>
   )
 }

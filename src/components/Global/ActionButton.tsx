@@ -1,14 +1,24 @@
 type ActionButtonProps = {
-    width: string
-    height: string
+    paddingX: number
+    paddingY: number
     variant: 'primary' | 'secundary'
     text: string
 }
 
-export default function ActionButton({width, height, variant, text} : ActionButtonProps){
+export default function ActionButton({paddingX, paddingY, variant, text} : ActionButtonProps){
+
+    const variantClasses = variant === 'primary' ? 'bg-strongblue border-none text-light-white ' : 'border border-black text-black'
+
     return(
         <div>
-            <button className={`w-[${width}px] h-[${height}px] ${variant === 'primary' ? 'bg-strongblue border-none text-light-white ' : 'border border-black text-black'} flex items-center justify-center `}>
+            <button 
+            style={{
+                paddingLeft:paddingX,
+                paddingRight:paddingX,
+                paddingTop:paddingY,
+                paddingBottom:paddingY
+            }}
+            className={`${variantClasses} flex items-center justify-center cursor-pointer`}>
             {text}
             </button>
         </div>

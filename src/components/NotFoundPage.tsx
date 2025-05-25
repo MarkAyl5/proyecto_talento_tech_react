@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ActionButton from "./Global/ActionButton";
 
 export default function NotFoundPage(){
     return(
@@ -7,9 +8,12 @@ export default function NotFoundPage(){
             <h1 className="font-poppins text-3xl font-bold">Pagina no encontrada</h1>
             <p className="font-poppins text-lg ">La pagina a la que usted esta queriendo acceder no existe o fue cambiada, vuelva al inicio para seguir navegando</p>
             <Link to={"/"}>
-            <button className="p-4 bg-black text-white font-bold rounded-lg">
-                Volver al inicio
-            </button>
+                <ActionButton
+                paddingX={16}
+                paddingY={12}
+                variant="primary"
+                text="Volver al inicio"
+                />
             </Link>
         </div>
     )

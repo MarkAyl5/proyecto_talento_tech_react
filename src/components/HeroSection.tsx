@@ -9,8 +9,6 @@ export default function HeroSection() {
             <div className="size-4 bg-blue-500 opacity-50 rounded-full"></div>
             <div className="size-4 bg-blue-500 opacity-50 rounded-full"></div>
             <div className="size-4 bg-blue-500 opacity-50 rounded-full"></div>
-            
-            
         </div>
     </div>
   )
