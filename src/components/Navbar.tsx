@@ -11,7 +11,7 @@ export default function Navbar() {
                     <KalisGamingLogo/>
                 
                     <ul className="flex gap-16 [&_li]:text-light-white [&_li]:text-lg [&_li]:font-poppins">
-                        <Link to={"#"}>
+                        <Link to={"/products"}>
                             <li>Productos</li>
                         </Link>
                         <Link to={"#"}>

@@ -10,7 +10,7 @@ export default function Footer() {
         <KalisGamingLogo/>
         <FooterLinks
         link1="/"
-        link2="/"
+        link2="/products"
         link3="/"
         text1="Inicio"
         text2="Productos"

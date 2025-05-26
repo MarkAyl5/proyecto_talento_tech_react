@@ -1,21 +1,13 @@
 import RightArrow from "../assets/weui--arrow-outlined.svg"
 import HomePageProductCard from "./HomePageProductCard"
-import type { Product } from "../types"
-import { useState, useEffect } from "react"
+import ProductsConnection from "../Api/ProductsConnection"
 
 export default function HomePageProducts() {
 
-  const [products, setProducts] = useState<Product[]>([])
-  
-  
-      useEffect(()=>{
-          fetch("https://68268799397e48c91316632f.mockapi.io/products")
-          .then(res => res.json())
-          .then(data => setProducts(data.slice(0,8)))
-          .catch(err => console.error(err)
-          )
-      }, [])
 
+  const { products } = ProductsConnection()
+
+  const shortedProducts = products.slice(0,7)
 
   return (
     <div className="mx-15 mt-7 mb-32 flex flex-col gap-10">
@@ -30,11 +22,11 @@ export default function HomePageProducts() {
 
     <div className="flex justify-between mt-6">
 
-      {products.map((product) => (
+      {shortedProducts.map((product) => (
 
         <HomePageProductCard
         name={product.name.substring(0, 40)}
-        image={product.image}
+        image={product.image}                                                                
         price={product.price}
         />
       ))}
