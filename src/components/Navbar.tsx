@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom"
 import ProfileIcon from "../assets/mdi-light--account.svg"
 import CartIcon from "../assets/mdi-light--cart.svg"
+import KalisGamingLogo from "./Global/KalisGamingLogo"
 
 export default function Navbar() {
     return(
         <div className="bg-strongblue flex items-center w-full h-20 justify-between px-[60px] ">
 
            <div className="flex items-center gap-16">
-                    <p className="text-light-white text-[34px] font-bold font-orbitron">KALISGAMING</p>
+                    <KalisGamingLogo/>
                 
                     <ul className="flex gap-16 [&_li]:text-light-white [&_li]:text-lg [&_li]:font-poppins">
                         <Link to={"#"}>

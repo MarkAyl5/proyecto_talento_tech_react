@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NotFoundPage from './components/NotFoundPage.tsx'
+import Benefit from './components/BenefitsSection/Benefit.tsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>},

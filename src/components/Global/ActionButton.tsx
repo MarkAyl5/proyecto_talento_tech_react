@@ -7,7 +7,7 @@ type ActionButtonProps = {
 
 export default function ActionButton({paddingX, paddingY, variant, text} : ActionButtonProps){
 
-    const variantClasses = variant === 'primary' ? 'bg-strongblue border-none text-light-white ' : 'border border-black text-black'
+    const variantClasses = variant === 'primary' ? 'bg-strongblue border border-white text-light-white ' : 'border border-black text-black'
 
     return(
         <div>

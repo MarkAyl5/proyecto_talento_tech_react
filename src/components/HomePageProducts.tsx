@@ -18,7 +18,7 @@ export default function HomePageProducts() {
 
 
   return (
-    <div className="mx-15 mt-7 mb-24 flex flex-col gap-10">
+    <div className="mx-15 mt-7 mb-32 flex flex-col gap-10">
 
       <div className="flex justify-between [&_p]:font-poppins">
             <p className=" text-3xl "> <span className="font-bold">MEGA</span> ofertas para tu setup  </p>
@@ -28,7 +28,7 @@ export default function HomePageProducts() {
             </button>
       </div>
 
-    <div className="flex justify-between">
+    <div className="flex justify-between mt-6">
 
       {products.map((product) => (
 
