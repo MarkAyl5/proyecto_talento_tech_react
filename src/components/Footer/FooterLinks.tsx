@@ -18,7 +18,7 @@ export default function FooterLinks({link1, text1, link2, text2, link3, text3} :
           </Link>
         </li>
         <li>
-          <Link to={link3}>
+          <Link to={link2}>
           {text2}
           </Link>
         </li>

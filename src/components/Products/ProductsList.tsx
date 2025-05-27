@@ -1,8 +1,8 @@
-import { useState } from "react";
+
 import ProductsConnection from "../../Api/productsConnection";
 import ProductCard from "./ProductCard";
 import type { Product } from "../../types";
-import { useCart } from "../../hooks/useCart";
+
 
 type ProductsListProps = {
     addToCart: (item: Product) => void

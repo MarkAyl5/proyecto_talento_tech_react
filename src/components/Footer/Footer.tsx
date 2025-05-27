@@ -1,5 +1,4 @@
 import KalisGamingLogo from "../Global/KalisGamingLogo";
-import { Link } from "react-router-dom";
 import FooterLinks from "./FooterLinks";
 import ActionButton from "../Global/ActionButton";
 

@@ -3,7 +3,6 @@ import ProfileIcon from "../assets/mdi-light--account.svg"
 import CartIcon from "../assets/mdi-light--cart.svg"
 import KalisGamingLogo from "./Global/KalisGamingLogo"
 import { useState } from "react"
-import { useCart } from "../hooks/useCart"
 import ActionButton from "./Global/ActionButton"
 import type { CartItem, Product } from "../types"
 

@@ -5,7 +5,6 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NotFoundPage from './components/NotFoundPage.tsx'
 import Products from './components/Products/Products..tsx'
-import Benefit from './components/BenefitsSection/Benefit.tsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>},
