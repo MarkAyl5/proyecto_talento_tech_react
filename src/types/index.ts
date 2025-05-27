@@ -13,3 +13,14 @@ export type Product = {
     reviews: Review[]
     id:string
 }
+export type CartItem = {
+    name:string
+    image:string
+    description:string
+    price: number
+    category: string
+    stock:number
+    reviews: Review[]
+    id:string
+    quantity: number
+}

@@ -1,6 +1,6 @@
 import RightArrow from "../assets/weui--arrow-outlined.svg"
 import HomePageProductCard from "./HomePageProductCard"
-import ProductsConnection from "../Api/ProductsConnection"
+import ProductsConnection from "../Api/productsConnection"
 
 export default function HomePageProducts() {
 
