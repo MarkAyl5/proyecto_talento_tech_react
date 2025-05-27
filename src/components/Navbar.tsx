@@ -69,7 +69,7 @@ export default function Navbar({cart, removeFromCart, isEmpty, cartTotal} : Navb
 
                             </div>
                                 {isEmpty ? (<p className="font-poppins text-xl text-center">No hay items en el carrito...</p>) : (
-                                    <div className="flex flex-col gap-3 border border-amber-300 h-dvh overflow-scroll">
+                                    <div className="flex flex-col gap-3 border h-dvh overflow-scroll">
                                         {cart.map((cartItem) =>(
                                             <div className="p-3 bg-strongblue flex gap-4 h-32">
                                                     
