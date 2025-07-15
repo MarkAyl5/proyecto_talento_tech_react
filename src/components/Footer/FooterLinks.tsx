@@ -11,7 +11,8 @@ type FooterLinksProps = {
 export default function FooterLinks({link1, text1, link2, text2, link3, text3} : FooterLinksProps) {
   return (
     <div className="flex flex-col ">
-      <ul className="flex flex-col gap-6 [&_li]:text-light-white [&_li]:font-poppins">
+      
+      <ul className="flex flex-col gap-4 items-center  lg:gap-6  lg:items-baseline [&_li]:text-light-white [&_li]:font-poppins">
         <li>
           <Link to={link1}>
           {text1}

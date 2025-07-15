@@ -4,8 +4,9 @@ import ActionButton from "../Global/ActionButton";
 
 export default function Footer() {
   return (
-    <div className="bg-strongblue flex flex-col px-16 mt-10 w-full h-54 py-6">
-      <div className="h-5/6 flex justify-between">
+    <div className="bg-strongblue px-4 mt-10 w-full lg:h-54 py-6 lg:px-16">
+
+      <div className="flex flex-col gap-4 items-center lg:justify-between lg:h-5/6 lg:flex-row">
         <KalisGamingLogo/>
         <FooterLinks
         link1="/"

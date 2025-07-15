@@ -3,6 +3,6 @@ type HomeBannerProps = {
 }
 export default function HomeBanner({image} : HomeBannerProps) {
   return (
-   <img src={image} alt="" className="w-full h-[402px]" />
+   <img src={image} alt="" className="w-full h-[250px] md:h-[402px]" />
   )
 }
