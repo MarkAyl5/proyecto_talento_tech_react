@@ -4,9 +4,10 @@ type HomePageProductCardProps = {
     name: string
     image:string
     price: number
+    onClick?: () => void;
 }
 
-export default function HomePageProductCard({name, image, price} : HomePageProductCardProps) {
+export default function HomePageProductCard({name, image, price, onClick} : HomePageProductCardProps) {
   return (
     <div id="rainbow-gradient" className="p-[2px] w-[192px] h-[330px] ">
 
@@ -29,6 +30,7 @@ export default function HomePageProductCard({name, image, price} : HomePageProdu
                 paddingY={4}
                 variant="primary"
                 text="Mostrar más"
+                onClick={onClick}
                 />
         </div>
 

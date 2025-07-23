@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# KalisHardware
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda de hardware con carrito, panel de administración y autenticación simulada.
 
-Currently, two official plugins are available:
+## Instalación y uso
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clona el repositorio:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone <URL_DEL_REPO>
+cd KalisHardware
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instala las dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Inicia el proyecto en desarrollo:
+
+```bash
+npm run dev
+```
+
+El proyecto estará disponible en `http://localhost:5173` (o el puerto que indique Vite).
+
+## Estructura principal
+- `src/` Código fuente de la app
+- `public/` Imágenes y recursos estáticos
+- `README.md` Este archivo
+- `.gitignore` Ignora node_modules, dist, logs, etc.
+
+## Deploy en GitHub
+
+1. Crea un repositorio en GitHub y sube el código:
+
+```bash
+git init
+git remote add origin <URL_DEL_REPO>
+git add .
+git commit -m "Proyecto inicial"
+git push -u origin main
+```
+
+2. (Opcional) Para deploy en GitHub Pages, puedes usar [Vite + gh-pages](https://vitejs.dev/guide/static-deploy.html#github-pages):
+
+```bash
+npm install --save-dev gh-pages
+```
+
+Agrega en `package.json`:
+
+```json
+"homepage": "https://<usuario>.github.io/<repo>"
+```
+
+Y los scripts:
+
+```json
+"scripts": {
+  ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+Luego ejecuta:
+
+```bash
+npm run deploy
+```
+
+---
+
+## Notas
+- Login admin: usuario `admin`, contraseña `admin123`.
+- MockAPI: https://68268799397e48c91316632f.mockapi.io/products
