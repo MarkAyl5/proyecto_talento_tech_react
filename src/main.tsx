@@ -5,10 +5,11 @@ import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import NotFoundPage from './components/NotFoundPage.tsx'
 import Products from './components/Products/Products..tsx'
+import AdminManagement from './components/AdminManagement.tsx'
 
 const router = createBrowserRouter([
   {path:"/", element: <App/>},
-  {path:"/products", element: <Products/>},
+  {path:"/products", element: <AdminManagement/>},
   {path:"*", element: <NotFoundPage/>},
 ])
 
